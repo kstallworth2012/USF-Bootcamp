@@ -7,15 +7,11 @@
   <body>
     <p id="demo"></p>
     <script>
-      // document.getElementById("demo").innerHTML
-      let count = 10;
       let total = 0
-      // let random_num = Math.random()
       const id = setInterval(function () {
           let random_num = Math.random()
           console.log("hey there again")
           console.log(`Random number: ${random_num}`)
-          // console.log(count--);
 
           if (random_num >= 0.75){
             clearInterval(id);
@@ -24,25 +20,23 @@
           }else{
             total+=1
           }
-          // console.log(total)
 
       },1000);
 
 
 
-      // function countDown(number){
-      //   const id = setInterval(function () {
-      //        console.log(number--)
-      //        if(number == 0){
-      //          clearInterval(id)
-      //         console.log(`DONE!`);
-      //        }
-      //   },1000);
-      //
-      // };
-      // countDown(5);
-      document.write("HELLO MUTHA FUCKA!")
-      document.getElementById("demo").innerHTML = "importing a fucking JavaScript file is not working so this is what i'm doing!"
+      function countDown(number){
+        const id = setInterval(function () {
+             console.log(number--)
+             if(number == 0){
+               clearInterval(id)
+              console.log(`DONE!`);
+             }
+        },1000);
+      
+      };
+      countDown(5);
+
     </script>
   </body>
 </html>
